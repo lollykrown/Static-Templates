@@ -1,180 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
-  <head>
-    <title>Contact Us - Landed</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+<head>
+  <title>Contact Us - Healthcare</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-  <body class="is-preload">
-    <div id="page-wrapper">
-      <!-- Header -->
+<body class="is-preload">
 
-      <header id="header">
-        <h1 id="logo"><a href="index.html">Healthcare</a></h1>
+<!-- Sidebar -->
 
-        <nav id="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li>
-              <a href="contact.html" class="button primary">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+<section id="sidebar">
+  <div class="inner">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Who we are</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
-      <!-- Main -->
+<!-- Wrapper -->
 
-      <div id="main" class="wrapper style1">
-        <div class="container">
-        
-          <header class="major">
-            <h2>Contact Us</h2>
-            <p>
-              Have questions? Send us a message and we’ll get back to you
-              shortly.
-            </p>
-          </header>
+<div id="wrapper">
 
-          <div class="row gtr-150">
-            <!-- Sidebar -->
-            <div class="col-4 col-12-medium">
-              <section id="sidebar">
-                <section>
-                  <h3>Our Office</h3>
+<!-- Contact Section -->
 
-                  <p>
-                    12345 Somewhere Road<br />
-                    London<br />
-                    United Kingdom
-                  </p>
+<section class="wrapper style1 fade-up">
+  <div class="inner">
 
-                  <p>
-                    Phone: +44 0000 000000<br />
-                    Email: info@yourdomain.com
-                  </p>
-                </section>
 
-                <hr />
+<h2>Contact Us</h2>
 
-                <section>
-                  <a href="#" class="image fit">
-                    <img src="images/pic06.jpg" alt="" />
-                  </a>
+<p>
+  If you have any questions or enquiries, please fill out the form below
+  and our team will get back to you shortly.
+</p>
 
-                  <h3>Business Hours</h3>
+<div class="split style1">
 
-                  <p>
-                    Monday – Friday<br />
-                    9:00 AM – 6:00 PM
-                  </p>
-                </section>
-              </section>
-            </div>
+  <!-- Contact Form -->
+  <section>
+    <form method="POST" action="send-message.php">
 
-            <!-- Contact Form -->
-            <div class="col-8 col-12-medium imp-medium">
-              <section id="content">
-                <h3>Send us a message</h3>
+      <div class="fields">
 
-                <form method="POST" action="send-message.php">
-                  <div class="row gtr-uniform">
-                    <div class="col-6 col-12-xsmall">
-                      <label for="name">Name</label>
-                      <input type="text" name="name" id="name" required />
-                    </div>
-
-                    <div class="col-6 col-12-xsmall">
-                      <label for="email">Email</label>
-                      <input type="email" name="email" id="email" required />
-                    </div>
-
-                    <div class="col-6 col-12-xsmall">
-                      <label for="phone">Phone</label>
-                      <input type="text" name="phone" id="phone" />
-                    </div>
-
-                    <div class="col-6 col-12-xsmall">
-                      <label for="subject">Subject</label>
-                      <input type="text" name="subject" id="subject" required />
-                    </div>
-
-                    <div class="col-12">
-                      <label for="message">Message</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        rows="6"
-                        required
-                      ></textarea>
-                    </div>
-
-                    <div class="col-12">
-                      <ul class="actions">
-                        <li>
-                          <button type="submit" class="primary">
-                            Send Message
-                          </button>
-                        </li>
-                        <li>
-                          <button type="reset">Reset</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
-              </section>
-            </div>
-          </div>
-          
+        <div class="field half">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
         </div>
+
+        <div class="field half">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="field half">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+
+        <div class="field half">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" required />
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </div>
+
       </div>
 
-      <!-- Footer -->
+      <ul class="actions">
+        <li>
+          <button type="submit" class="button primary">
+            Send Message
+          </button>
+        </li>
+        <li>
+          <button type="reset" class="button">
+            Reset
+          </button>
+        </li>
+      </ul>
 
-      <footer id="footer">
+    </form>
+  </section>
+
+  <!-- Contact Details -->
+  <section>
+    <ul class="contact">
+
+      <li>
+        <h3>Address</h3>
+        <span>
+          12345 Somewhere Road #654<br />
+          London<br />
+          United Kingdom
+        </span>
+      </li>
+
+      <li>
+        <h3>Email</h3>
+                  <a href="#">user@untitled.tld</a>
+      </li>
+
+      <li>
+        <h3>Phone</h3>
+        <span>+44 0000 000000</span>
+      </li>
+
+      <li>
+        <h3>Social</h3>
         <ul class="icons">
-          <li><a href="#" class="icon brands alt fa-twitter"></a></li>
-          <li><a href="#" class="icon brands alt fa-facebook-f"></a></li>
-          <li><a href="#" class="icon brands alt fa-linkedin-in"></a></li>
-          <li><a href="#" class="icon brands alt fa-instagram"></a></li>
-          <li><a href="#" class="icon brands alt fa-github"></a></li>
-          <li><a href="#" class="icon solid alt fa-envelope"></a></li>
+          <li><a href="#" class="icon brands fa-twitter"></a></li>
+          <li><a href="#" class="icon brands fa-facebook-f"></a></li>
+          <li><a href="#" class="icon brands fa-instagram"></a></li>
+          <li><a href="#" class="icon brands fa-linkedin-in"></a></li>
         </ul>
+      </li>
 
-        <ul class="copyright">
-          <li>&copy; Your Company</li>
-          <li>Design: <a href="#">Healthcare</a></li>
-        </ul>
-      </footer>
-    </div>
+    </ul>
+  </section>
 
-    <!-- Scripts -->
+</div>
 
-    <script src="assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/jquery.scrolly.min.js"></script>
+  </div>
+</section>
 
-    <script src="assets/js/jquery.dropotron.min.js"></script>
+</div>
 
-    <script src="assets/js/jquery.scrollex.min.js"></script>
+<!-- Footer -->
 
-    <script src="assets/js/browser.min.js"></script>
+<footer id="footer" class="wrapper style1-alt">
+  <div class="inner">
+    <ul class="menu">
+      <li>&copy; Healthcare. All rights reserved.</li>
+      <li>Design: <a href="#">Healthcare</a></li>
+    </ul>
+  </div>
+</footer>
 
-    <script src="assets/js/breakpoints.min.js"></script>
+<!-- Scripts -->
 
-    <script src="assets/js/util.js"></script>
+<script src="assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+
+<script src="assets/js/jquery.scrolly.min.js"></script>
+
+<script src="assets/js/browser.min.js"></script>
+
+<script src="assets/js/breakpoints.min.js"></script>
+
+<script src="assets/js/util.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
